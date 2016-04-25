@@ -8,8 +8,10 @@ Steps:
 
 1. Install a library for web with `sudo pip install requests`
 2. Change into your directory with `cd ~/Downloads`
-3. Execute the program with `python download.py`  
-4. Try following code below:
+3. Write code by `nano download.py`
+4. Execute the program with `python download.py`  
+
+Try following code below:
 
 {% highlight python %}
 # Load the library
