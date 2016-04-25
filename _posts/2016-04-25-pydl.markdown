@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "How to download a file with Python"
+date:   2016-04-25 19:04:08 +0200
+categories: Python basics programming
+---
+Steps: 
+
+1. Install a library for web with `sudo pip install requests`
+2. Change into your directory with `cd ~/Downloads`
+3. Execute the program with `python download.py`  
+4. Try following code below:
+
+{% highlight python %}
+# Load the library
+import requests
+
+# Make an URL request 
+r = requests.get('http://bit.ly/1WlCvyJ')
+# File name and open it for binary writing 
+with open('test.jpg', 'wb') as f:
+    # Download the bytes
+    f.write(r.content)
+{% endhighlight %}
+
+Your file is now in ***~/Downloads/test.jpg***!
