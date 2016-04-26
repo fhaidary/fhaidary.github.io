@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "How to build Java with Maven"
+date:   2016-04-26 18:44:08 +0200
+categories: Java Maven building
+---
+Steps: 
+
+1. Check out your Java project with `git clone https://github.com/apache/incubator-zeppelin.git` 
+2. Go into repository with `cd incubator-zeppelin`
+3. Select your project with `cd zeppelin-web`
+4. Build it with `~/maven/bin/mvn clean package -DskipTests`
+5. The compiled archive is called `zeppelin-web-0.6.0-incubating-SNAPSHOT.war`
+
+Your files are now in ***incubator-zeppelin/zeppelin-web/target***!
